@@ -36,7 +36,7 @@ def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.connect((host, port))
 
-        # Генерація випадкових розмірів матриць від 100 до 1000
+
         m, n, l = random.randint(1000, 10000), random.randint(1000, 10000), random.randint(1000, 10000)
         matrix_A = np.random.rand(m, n).astype(np.float64)
         matrix_B = np.random.rand(n, l).astype(np.float64)
